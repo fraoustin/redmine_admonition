@@ -48,7 +48,7 @@ Redmine::Plugin.register :redmine_admonition do
   author 'Frederic AOUSTIN'
   description 'add admonition in redmine'
   url "http://www.github.com/fraoustin/redmine_admonition" if respond_to?(:url)
-  version '0.1.0'
+  version '0.1.2'
   requires_redmine :version_or_higher => '2.3.0'
 
   RedCloth3::ALLOWED_TAGS << "div"
