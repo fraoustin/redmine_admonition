@@ -1,0 +1,25 @@
+.note, .info, .warning, .alert {
+  margin: 10px;
+  padding: 0px 10px;
+}
+
+.info {
+  color: #66bb66 !important;
+  border-left: 2px solid #66bb6a !important;
+}
+
+.note {
+  color: #6AB0DE !important;
+  border-left: 2px solid #6AB0DE !important;
+}
+
+.warning {
+  color: #FF9800 !important;
+  border-left: 2px solid #FF9800 !important;
+}
+
+.alert {
+  color: #F44336 !important;
+  border-left: 2px solid #F44336 !important;
+}
+
