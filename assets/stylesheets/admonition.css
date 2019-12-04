@@ -1,24 +1,24 @@
-.note, .info, .warning, .alert {
+div.note, div.info, div.warning, div.alert {
   margin: 10px;
   padding: 0px 10px;
 }
 
-.info {
+div.info {
   color: #66bb66 !important;
   border-left: 2px solid #66bb6a !important;
 }
 
-.note {
+div.note {
   color: #6AB0DE !important;
   border-left: 2px solid #6AB0DE !important;
 }
 
-.warning {
+div.warning {
   color: #FF9800 !important;
   border-left: 2px solid #FF9800 !important;
 }
 
-.alert {
+div.alert {
   color: #F44336 !important;
   border-left: 2px solid #F44336 !important;
 }
