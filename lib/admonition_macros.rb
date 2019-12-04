@@ -24,12 +24,12 @@ module AdmonitionMacro
     end
 
     desc "Variant of @note@."
-    macro :important, :parse_args => false do |obj, args, text|
+    macro :warning, :parse_args => false do |obj, args, text|
       o = textilizable(args)
       if text.present?
         o << textilizable(text, :object => obj, :headings => false)
       end
-      content_tag('div', o.html_safe, :class => "important")
+      content_tag('div', o.html_safe, :class => "warning")
     end
 
     desc "Variant of @note@."
