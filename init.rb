@@ -45,7 +45,7 @@ end
 require File.expand_path('../../../lib/redmine/wiki_formatting/textile/redcloth3', __FILE__)
 Redmine::Plugin.register :redmine_admonition do
   name 'Redmine Admonition plugin'
-  author 'Frederic AOUSTIN'
+  author 'Frederic Aoustin'
   description 'add admonition in redmine'
   url "http://www.github.com/fraoustin/redmine_admonition" if respond_to?(:url)
   version '0.1.3'
