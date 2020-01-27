@@ -1,24 +1,24 @@
-div.note, div.info, div.warning, div.alert {
+div.admnote, div.adminfo, div.admwarning, div.admalert {
   margin: 10px;
   padding: 0px 10px;
 }
 
-div.info {
+div.adminfo {
   color: #66bb66 !important;
   border-left: 2px solid #66bb6a !important;
 }
 
-div.note {
+div.admnote {
   color: #6AB0DE !important;
   border-left: 2px solid #6AB0DE !important;
 }
 
-div.warning {
+div.admwarning {
   color: #FF9800 !important;
   border-left: 2px solid #FF9800 !important;
 }
 
-div.alert {
+div.admalert {
   color: #F44336 !important;
   border-left: 2px solid #F44336 !important;
 }

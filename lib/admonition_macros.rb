@@ -7,38 +7,42 @@ module AdmonitionMacro
       "{{note(Or if you really want)\nYou can do both...\n}}\n" +
       "</pre>"
     macro :note, :parse_args => false do |obj, args, text|
-      o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o = textilizable(text)
+      else
+        o = textilizable(args)
       end
-      content_tag('div', o.html_safe, :class => "note")
+      content_tag('div', o.html_safe, :class => "admnote")
     end
 
     desc "Variant of @note@."
     macro :info, :parse_args => false do |obj, args, text|
-      o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o = textilizable(text)
+      else
+        o = textilizable(args)
       end
-      content_tag('div', o.html_safe, :class => "info")
+      content_tag('div', o.html_safe, :class => "adminfo")
     end
 
     desc "Variant of @note@."
     macro :warning, :parse_args => false do |obj, args, text|
-      o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o = textilizable(text)
+      else
+        o = textilizable(args)
       end
-      content_tag('div', o.html_safe, :class => "warning")
+      content_tag('div', o.html_safe, :class => "admwarning")
     end
 
     desc "Variant of @note@."
     macro :alert, :parse_args => false do |obj, args, text|
-      o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o = textilizable(text)
+      else
+        o = textilizable(args)
       end
-      content_tag('div', o.html_safe, :class => "alert")
+      content_tag('div', o.html_safe, :class => "admalert")
     end
   end
 

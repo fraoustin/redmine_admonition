@@ -34,10 +34,6 @@ which can be used in one of three ways:
    {{note
    Alternately, you can put blocks of *wiki-formatted* text here.
    }}
-
-   {{note(Or if you really want)
-   You can do both...
-   }}
 ```
  
 This displays a block in the wiki page with a corresponding
