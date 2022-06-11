@@ -1,4 +1,4 @@
-module AdmonitionMacro
+module AdmonitionMacros
   Redmine::WikiFormatting::Macros.register do
     desc "Adds a note to the wiki page:\n\n" +
       "<pre>\n" +
